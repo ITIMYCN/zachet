@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateX Construction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_panel d-flex justify-content-between align-items-center py-3">
+                <p class="logo">
+                    <img src="./pictures/logo.png" alt="CreateX Construction Logo" class="img-fluid">
+                </p>
+                <nav class="menu">
+                    <ul class="list-unstyled d-flex mb-0">
+                        <li class="mx-3"><a href="#core-values">About Us</a></li>
+                        <li class="mx-3"><a href="#link_form">Work</a></li>
+                        <li class="mx-3"><a href="#services_scroll">Services</a></li>
+                        <li class="mx-3"><a href="#rec_scroll">News</a></li>
+                        <li class="mx-3"><a href="#contact_scroll">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-info-wrapper d-flex justify-content-center align-items-center">
+                    <div class="contact-info d-flex align-items-center mr-4">
+                        <img src="./pictures/iPhone.png" alt="Phone Icon" class="img-fluid">
+                        <div class="text-info ml-3">
+                            <p class="phone-text font-weight-bold">Call Us</p>
+                            <p class="phone-number">(405) 555-0128</p>
+                        </div>
+                    </div>
+                    <div class="contact-info d-flex align-items-center">
+                        <img src="./pictures/Chat.png" alt="Chat Icon" class="img-fluid">
+                        <div class="text-info ml-3">
+                            <p class="chat-text font-weight-bold">Talk to us</p>
+                            <p class="chat-number">hello@createx.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="crane">
+        <div class="crane_text">
+            Welcome to CreateX Construction
+        </div>
+        <div class="crane_second_text">
+            Step by step to create a good life
+        </div>
+    </section>
+
+    <section id="core-values" class="block_section">
+        <div class="container">
+
+            <div class="middle_header">
+                <h2 class="middle_title">Our core values</h2>
+            </div>
+
+            <div class="mission">
+                <p>Our mission is to set the highest standards for construction sphere.</p>
+            </div>
+
+            <div class="blocks">
+                <div class="first_block">
+                    <img class="img_block" src="./pictures/ic-hand.png" alt="Hand Icon">
+                    <h3 class="h3_blocks"> Quality </h3>
+                    <div class="text_on_blocks">Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit
+                        nostrud aliquip sunt.</div>
+                </div>
+
+                <div class="second_block">
+                    <img class="img_block" src="./pictures/ic-like.png" alt="Like Icon">
+                    <h3 class="h3_blocks"> Safety </h3>
+                    <div class="text_on_blocks">Anim reprehenderit sint voluptate exercitation adipisicing laborum
+                        adipisicing. Minim empor est ea.</div>
+                </div>
+
+                <div class="third_block">
+                    <img class="img_block" src="./pictures/ic-slippers.png" alt="Slippers Icon">
+                    <h3 class="h3_blocks"> Comfort </h3>
+                    <div class="text_on_blocks">Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit
+                        voluptate ullamco proident ea ad.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="link_form">
+        <div class="container mt-5">
+            <h2>Want to know more? Ask us a question:</h2>
+            <form>
+                <div class="form-row justify-content-between align-items-end">
+                    <div class="form-group col-md-3">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="firstname" name="name" placeholder="Your Name"
+                            onchange="checkNameFirst();" required>
+                        <div><span id="firstname_check"></span></div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="number">Phone</label>
+                        <input class="form-control" id="firstnumber" type="text" onblur="checkNumberFirst();"
+                            placeholder="Your Phone" required />
+                        <div><span id="firstnumber_check"></span></div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="message">Message</label>
+                        <input type="text" class="form-control" id="firstmessage" name="message"
+                            placeholder="Your Message" onblur="checkMessageFirst()" required>
+                        <div><span id="firstmessage_check"></span></div>
+                    </div>
+
+                    <div class="form-group col-md-3 d-flex justify-content-end">
+                        <button type="submit" class="btn" onclick="validateForm(event, 'first');">SEND</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="services_scroll" class="paper_fone">
+        <div class="container">
+            <div class="text_center_paper">
+                <h2 class="services">Our services</h2>
+            </div>
+            <div class="mission">
+                <p>Createx Construction Bureau is a construction giant with a full range of construction services.</p>
+            </div>
+            <div class="block-wrapper">
+                <div class="block">
+                    <div class="image-container">
+                        <img src="./pictures/Vector-1.png" alt="Vector Icon">
+                    </div>
+                    <p class="block-text">Quality</p>
+                </div>
+
+                <div class="block">
+                    <div class="image-container">
+                        <img src="./pictures/ic-plan.png" alt="Plan Icon">
+                    </div>
+                    <p class="block-text">Safety</p>
+                </div>
+                <div class="block">
+                    <div class="image-container">
+                        <img src="./pictures/vib.png" alt="Vibration Icon">
+                    </div>
+                    <p class="block-text">Comfort</p>
+                </div>
+                <div class="block">
+                    <div class="image-container">
+                        <img src="./pictures/ic-painting.png" alt="Painting Icon">
+                    </div>
+                    <p class="block-text">Design</p>
+                </div>
+            </div>
+            <div class="extra-info">
+                <h2 class="learn-more-text">Learn more about our services</h2>
+                <a href="#" class="view-services">View services</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="rec_scroll" class="Building_fone">
+        <div class="content-wrapper">
+            <div class="image-container">
+                <img src="./pictures/image-12.jpg" alt="house" class="form-image">
+            </div>
+            <div class="rec">
+                <h2>A quick way to discuss details</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="secondname" name="name" placeholder="Your Name" onchange="checkNameSecond();" required>
+                        <div><span id="secondname_check"></span></div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="number">Phone</label>
+                        <input class="form-control" id="secondnumber" type="text" onblur="checkNumberSecond();"
+                            placeholder="Your Phone" required />
+                        <div><span id="secondnumber_check"></span></div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Your Email" onblur="checkEmail();"
+                            required>
+                            <div><span id="mail_check"></span></div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <input type="text" class="form-control" id="secondmessage" name="message"
+                            placeholder="Your Message" onblur="checkMessageSecond()" required/>
+                        <div><span id="secondmessage_check"></span></div>
+                    </div>
+    
+                    <label>
+                        <input type="checkbox" name="subscribe" required> I agree to receive communications from Createx
+                        Construction Bureau.
+                    </label>
+    
+                    <div class="bttn">
+                        <button type="submit" class="btnsecond btn" onclick="validateForm(event, 'second');">SEND REQUEST</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact_scroll">
+        <div class="end_section">
+            <div class="end_logo">
+                <img class="end_createX" src="./pictures/logowhite.png" alt="Последний логотип">
+            </div>
+            <div class="end_contact">
+                <h3>Let’s stay in touch</h3>
+                <form id="emailForm" class="email-form">
+                    <input type="email" id="emailInput" class="email-input" placeholder="Your email" required />
+                    <button type="submit" class="submit-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!--Скрипт-->
+    <script src="script.js"> </script>
+
+</body>
+
+</html>
